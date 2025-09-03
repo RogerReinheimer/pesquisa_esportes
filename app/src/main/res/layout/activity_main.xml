@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgDecorativo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fundo_login"
+        android:alpha="0.3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/logoApp"
+                android:layout_width="153dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logo_olipico" />
+
+            <TextView
+                android:id="@+id/tvBemVindo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bem Vindo"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:layout_marginTop="26dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="42dp"
+                android:hint="Username"
+                android:padding="12dp"
+                android:background="@drawable/campo_texto" />
+
+            <EditText
+                android:id="@+id/etSenha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Password"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:background="@drawable/campo_texto" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="34dp"
+                android:text="Login"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/botao_login" />
+
+            <TextView
+                android:id="@+id/tvEsqueceuSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esqueceu a senha?"
+                android:textColor="#000000"
+                android:layout_marginTop="22dp" />
+        </LinearLayout>
+</FrameLayout>
