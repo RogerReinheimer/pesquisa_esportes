@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/bgDecorativo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/fundo_login"
-        android:alpha="0.3" />
+        android:alpha="0.5" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,28 +20,26 @@
             android:padding="24dp">
 
             <ImageView
-                android:id="@+id/logoApp"
-                android:layout_width="153dp"
-                android:layout_height="160dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="50dp"
-                android:src="@drawable/logo_olipico" />
+                android:src="@drawable/logo" />
 
             <TextView
-                android:id="@+id/tvBemVindo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Bem Vindo"
-                android:textSize="38sp"
+                android:textSize="36sp"
                 android:textStyle="bold"
                 android:layout_marginTop="26dp"
                 android:textColor="#000000" />
 
             <EditText
-                android:id="@+id/etNome"
+                android:id="@+id/etUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="42dp"
-                android:hint="Username"
+                android:hint="Usuário"
                 android:padding="12dp"
                 android:background="@drawable/campo_texto" />
 
@@ -51,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
-                android:hint="Password"
+                android:hint="Senha"
                 android:padding="12dp"
                 android:inputType="textPassword"
                 android:background="@drawable/campo_texto" />
@@ -59,12 +56,12 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="34dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
                 android:text="Login"
                 android:textSize="18sp"
                 android:textColor="#FFFFFF"
-                android:background="@drawable/botao_login" />
+                android:background="@drawable/design_botao" />
 
             <TextView
                 android:id="@+id/tvEsqueceuSenha"

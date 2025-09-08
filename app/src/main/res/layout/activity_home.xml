@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fundo_principal"
+        android:alpha="0.5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PESQUISA"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajude-nos a personalizar sua experiência respondendo a algumas perguntas sobre seus esportes olímpicos favoritos!"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"/>
+
+            <EditText
+                android:id="@+id/etPrimeiroNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Primeiro Nome"
+                android:textColorHint="@color/black"
+                android:background="@drawable/campo_azul"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etSobrenome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sobrenome"
+                android:textColorHint="@color/black"
+                android:background="@drawable/campo_amarelo"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/black"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/campo_preto"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etAniversario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data de Nascimento"
+                android:textColorHint="@color/black"
+                android:background="@drawable/campo_verde"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Spinner
+                android:id="@+id/spnEsporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/campo_vermelho"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ENVIAR"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/design_botao"
+                android:layout_marginBottom="24dp" />
+
+            <LinearLayout
+                android:id="@+id/cardResultados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@drawable/card_sobre">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="RESULTADOS"
+                        android:textColor="#488FEF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dps eu faco"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
