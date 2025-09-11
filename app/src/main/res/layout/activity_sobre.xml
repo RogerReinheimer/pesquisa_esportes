@@ -89,5 +89,15 @@
             android:textColor="#FFFFFF"
             android:background="@drawable/design_botao" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFechar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:text="Fechar"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/design_botao" />
+
     </LinearLayout>
 </FrameLayout>

@@ -2,6 +2,7 @@ package com.example.pesquisa_esporte
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -10,6 +11,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class sobre : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,6 +31,15 @@ class sobre : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnFechar: Button = findViewById(R.id.btnFechar)
+
+        btnFechar.setOnClickListener {
+            finishAffinity()
+            System.exit(0)
+        }
+
     }//fim oncreate
+
+
 
 }// fim codigo
